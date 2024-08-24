@@ -34,7 +34,7 @@ def edge_generator(
                     props["geom"] = reverse_linestring(props["geom"])
                     for change_sign in changes_sign:
                         if change_sign in props:
-                            props[change_sign] = -1 * props[change_sign]
+                            props[change_sign] = 1 * props[change_sign]
                     yield v, u, props
     except fiona.errors.DriverError:
         raise UnrecognizedFileFormat(
