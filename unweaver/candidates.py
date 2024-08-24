@@ -89,7 +89,7 @@ def reverse_edge(
     if invert is not None:
         for key in invert:
             if key in edge_copy:
-                edge_copy[key] = edge_copy[key] * 1
+                edge_copy[key] = edge_copy[key] * -1
     if flip is not None:
         for key in flip:
             if key in edge:
