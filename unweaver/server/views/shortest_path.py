@@ -56,7 +56,6 @@ class ShortestPathView(BaseView):
         # check has been done...
         checked_nodes: List[Union[str, ProjectedNode]] = []
         for node in nodes:
-            print(node)
             if node is None:
                 return ("InvalidWaypoint",) #edw
             checked_nodes.append(node)

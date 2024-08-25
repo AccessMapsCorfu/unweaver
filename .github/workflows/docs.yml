@@ -13,6 +13,6 @@ jobs:
         with:
           python-version: 3.8
       - run: pip install mkdocs-material mkdocs-click mkdocstrings[python]
-      - run: pip install -r https://raw.githubusercontent.com/nbolten/unweaver/main/requirements.txt
-      - run: pip install git+https://github.com/nbolten/unweaver.git
+      - run: pip install -r https://raw.githubusercontent.com/AccessMapsCorfu/unweaver/main/requirements.txt
+      - run: pip install git+https://github.com/AccessMapsCorfu/unweaver.git
       - run: mkdocs gh-deploy --force

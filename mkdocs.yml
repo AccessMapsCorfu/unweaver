@@ -1,6 +1,6 @@
 site_name: Unweaver
 repo_name: nbolten/unweaver
-repo_url: https://github.com/nbolten/unweaver
+repo_url: https://github.com/AccessMapsCorfu/unweaver
 theme:
   name: material
   logo: assets/logo.svg
