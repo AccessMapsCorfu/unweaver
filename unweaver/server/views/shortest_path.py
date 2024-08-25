@@ -57,7 +57,7 @@ class ShortestPathView(BaseView):
         checked_nodes: List[Union[str, ProjectedNode]] = []
         for node in nodes:
             if node is None:
-                return ("InvalidWaypoint3",)
+                return ("InvalidWaypoint",)
             checked_nodes.append(node)
 
         cost: float
