@@ -49,7 +49,7 @@ class ShortestPathTreeView(BaseView):
         if candidates is None:
             # TODO: return too-far-away result
             # TODO: normalize return type to be mapping with optional keys
-            return ("InvalidWaypoint4",)
+            return ("InvalidWaypoint",)
         candidate = choose_candidate(g.G, candidates, "origin", cost_function)
         if candidate is None:
             # TODO: return no-suitable-start-candidates result
