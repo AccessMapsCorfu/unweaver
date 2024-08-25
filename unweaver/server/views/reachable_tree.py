@@ -45,11 +45,11 @@ class ReachableTreeView(BaseView):
         candidates = waypoint_candidates(g.G, lon, lat, 4, dwithin=DWITHIN)
         if candidates is None:
             # TODO: return too-far-away result
-            return ("InvalidWaypoint1",)
+            return ("InvalidWaypoint",)
         candidate = choose_candidate(g.G, candidates, "origin", cost_function)
         if candidate is None:
             # TODO: return no-suitable-start-candidates result
-            return ("InvalidWaypoint2",)
+            return ("InvalidWaypoint",)
 
         G_aug = AugmentedDiGraphGPKGView.prepare_augmented(g.G, candidate)
         if self.profile.get("precalculate", False):
