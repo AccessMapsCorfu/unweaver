@@ -49,11 +49,11 @@ class ShortestPathTreeView(BaseView):
         if candidates is None:
             # TODO: return too-far-away result
             # TODO: normalize return type to be mapping with optional keys
-            return ("InvalidWaypoint",)
+            return ("InvalidWaypoint4",)
         candidate = choose_candidate(g.G, candidates, "origin", cost_function)
         if candidate is None:
             # TODO: return no-suitable-start-candidates result
-            return ("InvalidWaypoint",)
+            return ("InvalidWaypoint5",)
 
         G_aug = AugmentedDiGraphGPKGView.prepare_augmented(g.G, candidate)
         if self.profile.get("precalculate", False):
