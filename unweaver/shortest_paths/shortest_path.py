@@ -56,8 +56,8 @@ def waypoint_nodes(
             lat,
             n=4,
             dwithin=dwithin,
-            invert=None #invert,
-            flip=None #flip,
+            invert=None, #invert,
+            flip=None, #flip,
             node_id=node_id,
         )
 
